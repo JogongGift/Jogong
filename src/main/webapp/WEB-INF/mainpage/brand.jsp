@@ -21,8 +21,10 @@
     
 </head>
 <body>
-	brand
-	<c:set var="root" value="<%=request.getContextPath() %>"/>
-	<a href="${root}/product/detail">상세페이지</a>
+	<div style="width:100%; height:150px; border:1px solid gray;" align="center">
+		<h2>이벤트 등 영역</h2>
+		<c:set var="root" value="<%=request.getContextPath() %>"/>
+		<a href="${root}/product/detail">상세페이지 링크</a>
+	</div>
 </body>
 </html>

@@ -21,13 +21,13 @@
     
 <style type="text/css">
 	body * {
-		font-family: "Jua";
+		font-size: 15px;
 	}
 </style>
 </head>
 <body>
-	<div>
-		theme
+	<div style="width:100%; height:150px; border:1px solid gray;" align="center">
+		<h2>테마필터 영역</h2>
 	</div>
 </body>
 </html>

@@ -17,21 +17,55 @@
 <c:set var="root" value="<%=request.getContextPath() %>"/>
 <style type="text/css">
 	body * {
-		 font-family: 'Jua';
+		font-size: 15px;
+	}
+	#wrapper{
+	  width:100%;
+	  height: auto;
+	  min-height: 100%;
+	  padding-top: 100px;
 	}
 	#header{
-		background-color:lightgray;
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100px;
 	}
-	#main {
-		background-color:lightpink;
+	.content{
+	  background-color:lightpink;
+	  width:100%;
 	}
-	#footer{
-		background-color:lightblue;
-	
+	footer{
+	  background-color:lightblue;
+	  width: 100%;
+	  height: 150px;
+	  position : relative;
 	}
 </style>
 </head>
 <body>
-
+	<div id="wrapper">
+		<div id="header">
+			<tiles:insertAttribute name="header"/>
+		</div>
+		<div class="content">
+			<div id="gift">
+				<tiles:insertAttribute name="gift"/>
+			</div>	
+			<div id="brand">
+				<tiles:insertAttribute name="brand"/>
+			</div>
+			<div id="theme">
+				<tiles:insertAttribute name="theme"/>
+			</div>
+			<div id="price">
+				<tiles:insertAttribute name="price"/>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<tiles:insertAttribute name="footer"/>
+	</footer>
 </body>
 </html>

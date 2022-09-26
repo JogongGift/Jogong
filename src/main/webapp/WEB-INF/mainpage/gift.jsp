@@ -21,12 +21,13 @@
     
 <style type="text/css">
 	body * {
-		font-family: "Jua";
+		font-size: 15px;
 	}
-
 </style>
 </head>
 <body>
-	gift
+	<div style="width:100%; height:150px; border:1px solid gray;" align="center">
+		<h2>누구를 위한 선물인가요?</h2>
+	</div>
 </body>
 </html>

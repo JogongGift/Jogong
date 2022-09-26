@@ -7,23 +7,27 @@
 	<!-- layout -->
 	<definition name="layout" template="/WEB-INF/layout/layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
-		<put-attribute name="main" value="/WEB-INF/layout/main.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/layout/content.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
 	</definition>
 	
 	<!-- layout macro -->
 	<definition name="/bit/*/*" extends="layout">
-		<put-attribute name="main" value="/WEB-INF/{1}/{2}.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/{1}/{2}.jsp"/>
 	</definition>
 	
-	<!-- layoutMain -->
-<!-- 	<definition name="layout" template="/WEB-INF/mainpage/mainLayout.jsp">
+	<!-- main -->
+ 	<definition name="main" template="/WEB-INF/mainpage/mainLayout.jsp">
 		<put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+		<put-attribute name="gift" value="/WEB-INF/mainpage/gift.jsp"/>
+		<put-attribute name="theme" value="/WEB-INF/mainpage/theme.jsp"/>
+		<put-attribute name="brand" value="/WEB-INF/mainpage/brand.jsp"/>
+		<put-attribute name="price" value="/WEB-INF/mainpage/price.jsp"/>
 		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
 	</definition>
-	 -->
-	<!-- layoutMain macro -->
-<!-- 	<definition name="/bit/*/main" extends="mainLayout">
-		<put-attribute name="mainLayout" value="/WEB-INF/{1}/{2}.jsp"/>
-	</definition> -->
+	
+	<!-- main -->
+	<definition name="/bit/main/main" extends="main">
+		<put-attribute name="main" value="/WEB-INF/{1}/{2}.jsp"/>
+	</definition>
 </tiles-definitions>

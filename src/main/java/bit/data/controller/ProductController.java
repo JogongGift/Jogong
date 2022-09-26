@@ -9,7 +9,7 @@ public class ProductController {
 	@GetMapping("/product/detail")
 	public String detail() {
 		
-		return "/bit/poduct/detail";
+		return "/bit/product/detail";
 	}
 	
 }
