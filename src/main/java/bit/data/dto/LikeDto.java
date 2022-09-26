@@ -3,7 +3,7 @@ package bit.data.dto;
 import lombok.Data;
 
 @Data
-public class Like {
+public class LikeDto {
 	
 	private int num;
 	private int rating;

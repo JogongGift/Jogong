@@ -5,19 +5,18 @@ import java.sql.Timestamp;
 import lombok.Data;
 
 @Data
-public class UserDto {
+public class SellerDto {
+
 	private int num;
 	private String email;
 	private String password;
-	private String nickname;
-	private String profileImage;
+	private String companyName;
+	private String businessNumber;
+	private String logoImage;
 	private String phone;
 	private String address;
-	private boolean gender;
-	private int point;
-	private int year;
-	private int date;
-	private String loginType;
+	private String bank;
+	private String accountNumber;
 	private Timestamp createdAt;
-	private boolean isAdmin;
+	
 }

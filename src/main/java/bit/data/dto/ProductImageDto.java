@@ -3,9 +3,8 @@ package bit.data.dto;
 import lombok.Data;
 
 @Data
-public class WishlistDto {
+public class ProductImageDto {
 	private int num;
-	private boolean publicOption;
-	private int userNum;
+	private String imageUrl;
 	private int productNum;
 }
